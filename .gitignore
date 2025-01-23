@@ -1,2 +1,13 @@
-.vscode
+# Ignore compiled executables
 temp
+*.exe
+*.out
+*.o
+
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore build artifacts
+build/
+cmake-build-debug/
+cmake-build-release/
