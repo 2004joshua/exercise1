@@ -5,13 +5,11 @@
 #include <string> 
 #include <cctype> 
 #include <algorithm>
-#include <stdexpecpt>
+#include <stdexcept>
 
-double M_PI 3.1415 
-const double EARTH_RADIUS_KM = 6371.0;
+const double EARTHS_RADIUS_KM = 6371.0;
 
 using namespace std; 
-
 
 // converts to radians
 double toRadians(double x) {
@@ -41,7 +39,7 @@ double parseCoordinates(const string &input){
 		return -200; // Error code for empty string 
 	}
 
-	if(!s.empty() && s.back() == u8'°') {
+	if(!s.empty() && s.back() == '°') {
   	s.pop_back(); 
     trim(s);
   }
